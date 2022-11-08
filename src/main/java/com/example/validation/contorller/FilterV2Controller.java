@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequestMapping("/api-v3")
-public class LombokController {
+public class FilterV2Controller {
 
-    @PostMapping("/lombok")
+    @PostMapping("/temp")
     public Member member(@RequestBody Member member){
 
-        log.info("Member :{}", member);
+        log.info("Temp :{}", member);
         return member;
     }
 }
